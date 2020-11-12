@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pablo Sanchez | Developer</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <div id="landing">
+        <h1>
+          Hello, I'm<span id="highlight-name"> Pablo Sanchez</span><br />
+          I'm a Software Engineer
+        </h1>
+        <a href="#about" id="check">
+          Check Me Out<i class="fas fa-arrow-right"></i
+        ></a>
+      </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="#landing">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#showcase">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="about" class="container">
+      <h2 id="header">I Build Experiences</h2>
+      <div id="tools">
+        <div class="tool">
+          <p>Clear Structured Code</p>
+        </div>
+        <div class="tool">
+          <p>Effective Communication</p>
+        </div>
+        <div class="tool">
+          <p>Something Else</p>
+        </div>
+      </div>
+        <div id="me">
+          <img src="images/headShot.jpg" alt="Pablo" />
+          <p id="bio">
+            Hello, my name is <span class="highlight-blue">Pablo Sanchez</span>.
+            I’m a Computer Science student from New York City with a special
+            interest in Software Development. My inquisitive nature, determination
+            and creativity fuel my everyday work. I’m a dedicated problem solver
+            and I enjoy collaborating with clients to create thoughtful,
+            engaging, functional and fully responsive web applications. My
+            favorite tools to use are C++ and Java. I also enjoy Javascript and React which I use to
+            create intricate modern websites. 
+          </p>
+        </div>
+    </div>
+    <div id="showcase">
+      <h2 id="workst">Portfolio</h2>
+      <div id="works" class="container">
+        <div class="work fv">
+          <div class="overlay">
+            <h3>Login / Sign up</h3>
+            <p>Form Validation</p>
+            <p>Light / Dark mode</p>
+            <p>Local Storage</p>
+            <p  class="more-info" id="fv-modal-btn">More Info</p>
+          </div>
+        </div>
+        <div class="work bh">
+          <div class="overlay">
+            <h3>Beestro Hive</h3>
+            <p>Menu Slider</p>
+            <p>Modal</p>
+            <p  class="more-info" id="bh-modal-btn">More Info</p>
+          </div>
+        </div>
+        <div class="work vd">
+          <div class="overlay">
+            <h3>Vin Decoder</h3>
+            <p>API App</p>
+            <p>Carmd API</p>
+          <p  class="more-info" id="vd-modal-btn">More Info</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal1 -->
+    <div class="modal-container" id="fv-modal">
+      <div class="modal" id="modal">
+        <button class="close-btn" id="fv-close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Login / Sign up</h3>
+        </div>
+        <div class="modal-content">
+          <p>I this project created a simple form which used both javascript and php for form validation. The validation updates everytime there is a new completed entry, as you can see upon submitting after completing every form element. <br><br>I also incorporated a light / dark theme switcher, which also uses local storage to save the visitor's last used settings.</p>
+          <p class="more-info"><a href="https://psanchez104.github.io/Form-submission-with-php/" target="_blank">Visit Site</a></p>
+      </div>
+    </div>
+    </div>
+  <!-- modal2 -->
+  <div class="modal-container" id="bh-modal">
+    <div class="modal" id="modal">
+      <button class="close-btn" id="bh-close">
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="modal-header">
+        <h3>The Beestro Hive</h3>
+      </div>
+      <div class="modal-content">
+        <p>A simple Restaurant site that uses a modal that is easy to use. Visitor can either click the x button or click outside the modal to exit. I also created an elegant menu slider, where the navbar slides out and pushes the site upon clicking the menu button.</p>
+        <p class="more-info"><a href="https://psanchez104.github.io/Beestro-Hive/" target="_blank">Visit Site</a></p>
+    </div>
+  </div>
+  </div>
+  <!-- modal3 -->
+  <div class="modal-container" id="vd-modal">
+    <div class="modal" id="modal">
+      <button class="close-btn" id="vd-close">
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="modal-header">
+        <h3>VIN Decoder API App</h3>
+      </div>
+      <div class="modal-content">
+        <p>This web App used the Carmd API to return back a vehicle's year, make and model based off of the car vin entered in by the user.</p>
+        <p class="more-info"><a href="https://psanchez104.github.io/Vin-Decoder/" target="_blank">Visit Site</a></p>
+    </div>
+  </div>
+  </div>
+  
+    <div id="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <form action="form-submission.php" method="POST" id="form" class="form" >
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" />
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" ></textarea>
+              <small>Error Message</small>
+            </div>
+            <button type="submit">Send!</button>
+          </form>
+        </div>
+    </div>
+
+    <!-- submitted modal -->
+    <div class="modal-container" id="cfs-modal">
+      <div class="modal" id="modal">
+        <button class="close-btn" id="cfs-close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Submission Complete!</h3>
+        </div>
+        <div class="modal-content">
+          <p>Pablo will be in contact with you shortly.</p>
+      </div>
+    </div>
+    </div>
+
+    <footer>
+      <p>Content created and designed by Pablo Sanchez &copy; 2020</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
